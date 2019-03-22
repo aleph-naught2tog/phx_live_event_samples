@@ -30,7 +30,7 @@
 1. `index.html.eex` => `<%= live_render(@conn, PhxLiveEventSamplesWeb.BasicLive) %>`
     * error: `function PhxLiveEventSamplesWeb.BasicLive.mount/2 is undefined (module PhxLiveEventSamplesWeb.BasicLive is not available)`
 
-2. create a file in `live` called: `basic_live.ex`
+2. create a file in `live` called: `basic_live.ex` (`PhxLiveEventSamples.BasicLive`)
     *
     ```elixir
     defmodule PhxLiveEventSamples.BasicLive do
@@ -38,3 +38,8 @@
     ```
 
     * error: `function PhxLiveEventSamplesWeb.BasicLive.mount/2 is undefined or private`
+
+3. `use` the base `LiveView` module to get default functions
+
+    * `use Phoenix.LiveView`
+    * error: `function PhxLiveEventSamplesWeb.BasicLive.render/1 is undefined or private`
