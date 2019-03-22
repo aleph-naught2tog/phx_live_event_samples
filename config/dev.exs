@@ -52,6 +52,7 @@ config :phx_live_event_samples, PhxLiveEventSamplesWeb.Endpoint,
       ~r{priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$},
       ~r{priv/gettext/.*(po)$},
       ~r{lib/phx_live_event_samples_web/views/.*(ex)$},
+      ~r{lib/phx_live_event_samples_web/live/.*(ex)$},
       ~r{lib/phx_live_event_samples_web/templates/.*(eex)$}
     ]
   ]
