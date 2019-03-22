@@ -12,7 +12,10 @@ config :phx_live_event_samples, PhxLiveEventSamplesWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "80NvMU70a4dFrOUvEFOIs6UUzChMafsJnULxaOGKXSCR+7sGrbTG9p05Ib5kEhOl",
   render_errors: [view: PhxLiveEventSamplesWeb.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: PhxLiveEventSamples.PubSub, adapter: Phoenix.PubSub.PG2]
+  pubsub: [name: PhxLiveEventSamples.PubSub, adapter: Phoenix.PubSub.PG2],
+  live_view: [
+    signing_salt: "1quWCHj4fLDF184qfi372DRSDYF+umnS"
+  ]
 
 # Configures Elixir's Logger
 config :logger, :console,
