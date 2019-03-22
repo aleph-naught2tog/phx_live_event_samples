@@ -11,6 +11,7 @@ defmodule PhxLiveEventSamplesWeb.BasicLive do
           type="text"
           id="input_target_id"
           name="input_target"
+          phx-keydown="keydown"
         />
       </section>
     }
