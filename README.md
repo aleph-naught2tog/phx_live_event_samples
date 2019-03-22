@@ -23,3 +23,9 @@
 5. make a folder called `live` parallel to your other web folders -- i.e., same level as `controllers`, etc
 
 6. (optional) add live view `.ex` files to what should cause a reload
+
+## adding an event handler
+
+0. start your server: `mix phx.server`
+1. `index.html.eex` => `<%= live_render(@conn, PhxLiveEventSamplesWeb.BasicLive) %>`
+    * error: `function PhxLiveEventSamplesWeb.BasicLive.mount/2 is undefined (module PhxLiveEventSamplesWeb.BasicLive is not available)`
