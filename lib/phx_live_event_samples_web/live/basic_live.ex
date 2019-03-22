@@ -1,0 +1,3 @@
+defmodule PhxLiveEventSamplesWeb.BasicLive do
+
+end

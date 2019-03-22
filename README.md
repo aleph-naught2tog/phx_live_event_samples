@@ -29,3 +29,12 @@
 0. start your server: `mix phx.server`
 1. `index.html.eex` => `<%= live_render(@conn, PhxLiveEventSamplesWeb.BasicLive) %>`
     * error: `function PhxLiveEventSamplesWeb.BasicLive.mount/2 is undefined (module PhxLiveEventSamplesWeb.BasicLive is not available)`
+
+2. create a file in `live` called: `basic_live.ex`
+    *
+    ```elixir
+    defmodule PhxLiveEventSamples.BasicLive do
+    end
+    ```
+
+    * error: `function PhxLiveEventSamplesWeb.BasicLive.mount/2 is undefined or private`
