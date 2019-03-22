@@ -1,6 +1,8 @@
 defmodule PhxLiveEventSamplesWeb.Endpoint do
   use Phoenix.Endpoint, otp_app: :phx_live_event_samples
 
+  socket "/live", Phoenix.LiveView.Socket
+
   socket "/socket", PhxLiveEventSamplesWeb.UserSocket,
     websocket: true,
     longpoll: false
