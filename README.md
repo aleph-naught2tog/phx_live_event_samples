@@ -43,3 +43,17 @@
 
     * `use Phoenix.LiveView`
     * error: `function PhxLiveEventSamplesWeb.BasicLive.render/1 is undefined or private`
+
+4. define the `render/1` function
+
+    ```elixir
+    defmodule PhxLiveEventSamplesWeb.BasicLive do
+      use Phoenix.LiveView
+
+      def render(assigns) do
+
+      end
+    end
+    ```
+
+    * error: `expected PhxLiveEventSamplesWeb.BasicLive.render/1 to return a %Phoenix.LiveView.Rendered{} struct`. Phoenix tells us the solution very happily: `Ensure your render function uses ~L...`
