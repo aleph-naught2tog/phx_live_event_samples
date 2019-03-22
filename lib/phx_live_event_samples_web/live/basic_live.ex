@@ -4,6 +4,9 @@ defmodule PhxLiveEventSamplesWeb.BasicLive do
   def render(assigns) do
     ~L{
       <section>
+        <button phx-click="click">
+          Working button
+        </button>
         <label for="input_target_id">
           (Currently useless) input:
         </label>
