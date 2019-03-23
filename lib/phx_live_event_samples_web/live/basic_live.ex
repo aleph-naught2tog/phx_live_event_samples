@@ -18,12 +18,12 @@ defmodule PhxLiveEventSamplesWeb.BasicLive do
           phx-keydown="keydown"
         />
         <hr />
-        <label for="input_target_id">
+        <label for="input_target_id_two">
           This input will simply never fail and never fire on keydown:
         </label>
         <input
           type="text"
-          id="input_target_id"
+          id="input_target_id_two"
           name="input_target"
           phx-keydown="keydown"
           phx-target="document"
